@@ -1,14 +1,15 @@
-```rst
+```markdown
 # Vega Framework
 
 Vega Framework is a generative AI framework built for researchers and PyTorch developers working on large language models (LLMs), multimodal models (MM), automatic speech recognition (ASR), and text-to-speech synthesis (TTS). The primary objective of Vega is to provide a scalable framework for researchers and developers from industry and academia to more easily implement and design new generative AI models by being able to leverage existing code and pretrained models.
+
+**Note: Vega Framework is a replica of the NeMo model by NVIDIA, with modifications and enhancements to fit specific project requirements.**
 
 For technical documentation, please see the Vega Framework User Guide.
 
 All Vega models are trained with Lightning and training is automatically scalable to 1000s of GPUs.
 
-When applicable, Vega models take advantage of the latest possible distributed training techniques, including parallelism strategies such as
-
+When applicable, Vega models take advantage of the latest possible distributed training techniques, including parallelism strategies such as:
 - data parallelism
 - tensor parallelism
 - pipeline model parallelism
@@ -47,8 +48,8 @@ For advanced users that want to train Vega models from scratch or finetune exist
 - NVIDIA GPU, if you intend to do model training
 
 ## Developer Documentation
-| Version | Status | Description |
-|---------|--------|-------------|
+| Version | Status               | Description                                  |
+|---------|----------------------|----------------------------------------------|
 | Latest  | Documentation Status | Documentation of the latest (i.e. main) branch. |
 | Stable  | Documentation Status | Documentation of the stable (i.e. most recent release) branch. |
 
@@ -202,9 +203,9 @@ When using a released version of Vega, please refer to the Software Component Ve
 
 If starting with a base NVIDIA PyTorch container first launch the container:
 
-```
 
-bash
+
+```bash
 docker run \
   --gpus all \
   -it \
